@@ -1,0 +1,9 @@
+*.o
+bin/
+*.json
+*.png
+*.swp
+*.swo
+*~
+.DS_Store
+core
