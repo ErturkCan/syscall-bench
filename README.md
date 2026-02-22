@@ -299,19 +299,19 @@ NUMA topology queried from `/sys/devices/system/node/` for cross-node testing.
 To add a new benchmark:
 
 1. Create `src/bench_mytest.c`:
-   - Implement `int bench_mytest(int iterations, histogram_t *hist)`
-   - Use `TIMING_START`/`TIMING_STOP` macros
-   - Call `histogram_add_sample()` for each measurement
+  - Implement `int bench_mytest(int iterations, histogram_t *hist)`
+  - Use `TIMING_START`/`TIMING_STOP` macros
+  - Call `histogram_add_sample()` for each measurement
 
 2. Update `include/bench.h`:
-   - Declare the benchmark function
+  - Declare the benchmark function
 
 3. Update `src/main.c`:
-   - Add to benchmark list parsing
-   - Call the benchmark function
+  - Add to benchmark list parsing
+  - Call the benchmark function
 
 4. Update `Makefile`:
-   - Add `src/bench_mytest.o` to OBJS
+  - Add `src/bench_mytest.o` to OBJS
 
 ## Performance Tips
 
